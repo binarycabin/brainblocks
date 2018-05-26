@@ -1,0 +1,30 @@
+{
+    "name": "binarycabin/brainblocks",
+    "description": "An integration helper for taking Nano payments via BrainBlocks",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Kilroy",
+            "email": "jeff@binarycabin.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BinaryCabin\\BrainBlocks\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BinaryCabin\\BrainBlocks\\Providers\\BrainBlocksServiceProvider"
+            ],
+            "aliases": {
+                "BrainBlocks": "BinaryCabin\\BrainBlocks\\Facades\\BrainBlocks"
+            }
+        }
+    }
+}
