@@ -27,7 +27,7 @@ Simply include the button view where you would like the button to appear. Be sur
 You can add multiple buttons on this page using this include. Then at the bottom of the page, be sure to add your javascript
 
 ```
-@include('brainblocks::scripts')])
+@include('brainblocks::scripts')
 ```
 
 ## Validating BrainBlocks Responses
