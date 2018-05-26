@@ -24,6 +24,12 @@ Simply include the button view where you would like the button to appear. Be sur
 @include('brainblocks::button',['amountRai'=>1000,'action'=>url('/pay')])
 ```
 
+You can add multiple buttons on this page using this include. Then at the bottom of the page, be sure to add your javascript
+
+```
+@include('brainblocks::scripts')])
+```
+
 ## Validating BrainBlocks Responses
 
 In your POST route, call the 
