@@ -47,9 +47,9 @@ Route::post('/pay', function(Request $request){
 });
 ```
 
-BrainBlocks::getTokenResponse will return the full response from the BrainBlocks, this can be validated manually or you can use the "validateResponse" helper.
+`BrainBlocks::getTokenResponse` will return the full response from the BrainBlocks, this can be validated manually or you can use the `validateResponse` helper.
 
-By default, the validateResponse helper will make sure:
-- the "fufilled" property is "true"
+By default, the `validateResponse` helper will make sure:
+- the `fulfilled` property is `true`
 - the "destination" address matches the address your config
 The second property takes an array of additional validations you would like to check, for example checking the amount.
