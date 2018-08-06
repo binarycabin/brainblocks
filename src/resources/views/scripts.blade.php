@@ -31,6 +31,10 @@
                             currency: brainBlocksButtonCurrency,
                             amount: brainBlocksButtonAmount
                         },
+                        style: {
+                            expanded: true,
+                            size: 'responsive'
+                        },
                         onPayment: function (data) {
                             document.getElementById(brainBlocksButtonId + "-token").value = data.token;
                             document.getElementById(brainBlocksButtonId + "-form").submit();
