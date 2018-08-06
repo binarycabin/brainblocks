@@ -6,8 +6,14 @@ if(empty($destination)){
 if(empty($currency)){
 	$currency = 'rai';
 }
+if(empty($expanded)){
+	$expanded = false;
+}
+if(empty($size)){
+	$size = 'responsive';
+}
 ?>
-<div v-pre rel="brainblocks-button" data-id="{{ $buttonId }}" data-amount="{{ $amount }}" data-destination="{{ $destination }}" data-currency="{{ $currency }}" id="{{ $buttonId }}-button"></div>
+<div v-pre rel="brainblocks-button" data-id="{{ $buttonId }}" data-amount="{{ $amount }}" data-destination="{{ $destination }}" data-currency="{{ $currency }}" data-size="{{ $size }}" data-expanded="{{ $expanded }}" id="{{ $buttonId }}-button"></div>
 <form action="{{ $action }}" method="POST" id="{{ $buttonId }}-form">
     <input type="hidden" name="brainblocks_token" id="{{ $buttonId }}-token" value="" />
     {{ csrf_field() }}
