@@ -25,6 +25,8 @@
                     var brainBlocksButtonAmount = brainBlocksElement.dataset.amount;
                     var brainBlocksButtonDestination = brainBlocksElement.dataset.destination;
                     var brainBlocksButtonCurrency = brainBlocksElement.dataset.currency;
+                    var brainBlocksButtonExpanded = brainBlocksElement.dataset.expanded;
+                    var brainBlocksButtonSize = brainBlocksElement.dataset.size;
                     var brainBlocksRenderer = brainblocks.Button.render({
                         payment: {
                             destination: brainBlocksButtonDestination,
@@ -32,14 +34,14 @@
                             amount: brainBlocksButtonAmount
                         },
                         style: {
-                            expanded: true,
-                            size: 'responsive'
+                            expanded: brainBlocksButtonExpanded,
+                            size: brainBlocksButtonSize
                         },
                         onPayment: function (data) {
-                            document.getElementById(brainBlocksButtonId + "-token").value = data.token;
-                            document.getElementById(brainBlocksButtonId + "-form").submit();
+                            document.getElementById(brainBlocksButtonId+"-token").value = data.token;
+                            document.getElementById(brainBlocksButtonId+"-form").submit();
                         }
-                    }, '#' + brainBlocksButtonId + '-button');
+                    }, '#'+brainBlocksButtonId+'-button');
                 }
             }
         }
