@@ -88,5 +88,12 @@ $responseIsValid = \BrainBlocks::validateResponse($brainBlocksResponse,[
 ]);
 ```
 
+## Donate
+
+[![Donate with NaNote](https://i.imgur.com/aLoptWA.png)](https://nanote.net/pay/binarycabin)
+
+
+
+
 
 
