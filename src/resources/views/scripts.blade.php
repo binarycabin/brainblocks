@@ -38,11 +38,8 @@
                             size: brainBlocksButtonSize
                         },
                         onPayment: function (data) {
-                            //throw a short delay before verifying to make sure payment is fulfilled
-                            setTimeout(function(){
-                                document.getElementById(brainBlocksButtonId+"-token").value = data.token;
-                                document.getElementById(brainBlocksButtonId+"-form").submit();
-                            }, 10000);
+                            document.getElementById(brainBlocksButtonId+"-token").value = data.token;
+                            document.getElementById(brainBlocksButtonId+"-form").submit();
                         }
                     }, '#'+brainBlocksButtonId+'-button');
                 }
