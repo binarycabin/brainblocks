@@ -42,7 +42,7 @@
                             setTimeout(function(){
                                 document.getElementById(brainBlocksButtonId+"-token").value = data.token;
                                 document.getElementById(brainBlocksButtonId+"-form").submit();
-                            }, 5000);
+                            }, 10000);
                         }
                     }, '#'+brainBlocksButtonId+'-button');
                 }
